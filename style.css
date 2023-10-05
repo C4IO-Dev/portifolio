@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    transition: top 0.3s ease-in-out;
+}
+
+.menu li {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Estilo para os botões de rolagem */
+.scroll-button {
+    display: block;
+    width: 30px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.scroll-button.up {
+    left: 0;
+}
+
+.scroll-button.down {
+    right: 0;
+}
