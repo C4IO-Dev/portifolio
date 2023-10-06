@@ -19,12 +19,11 @@ h2{
 /* Cabeçalho */
 
 header {
-    background-image: linear-gradient(#525252 10%, #072615 );
+    background-image: linear-gradient(#525252 10%, #3d3d3d );
 
     display: flex;
     align-items: flex-start;
 
-    width: 100vw;
     height: 75px;
 }
 
@@ -45,6 +44,7 @@ menu {
     list-style-type: none;
 
     padding-bottom: 10px;
+    
 }
 
 .item-lista {
@@ -67,26 +67,28 @@ menu {
 
 .link-lista {
     text-decoration: none;
-    color: black;
+    color:rgb(189, 189, 189);
 }
 
 .link-lista:hover {
     background-color: var(--cor2);
+    color: black;
+
+    transition-duration: .5s;
     transform: translate(-3px, -3px);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
-    transition: transform 0.2s, box-shadow 0.2s;
     border-radius: 5px;
 }
 
 /* Sessão Sobre */
 
 .sobre {
-    width: 100vw;
+    width: 92.5vw;
     height: 310px;
     padding: 10px;
     text-align: center;
 
-    background-image: linear-gradient(#072615 , #125c31);
+    background-image: linear-gradient(#3d3d3d , #292929);
 }
 
 .img-sobre {
@@ -101,6 +103,7 @@ menu {
 .texto-sobre {
     overflow: hidden;
     line-height: 27px;
+    color: rgb(189, 189, 189);
 }
 
 span {
@@ -114,17 +117,28 @@ section.sobre>article {
 /* Sessão Tecnologias */
 
 .tecnologias {
-    text-align: center;
-    padding: 10px;
-    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    padding: 10px;
+    height: 560px;
+
+    background-image: linear-gradient(#292929,#3d3d3d );
 }
 
 section.tecnologias>article {
+    width: 150px;
+
     display: grid;
     place-items: center;
-    padding: 5px;
+    justify-content: center;
+
+    margin: 5px;
     font-size: 1.1em;
+
+    border: 1px solid var(--cor2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
 }
 
 .js {
@@ -161,23 +175,28 @@ section.tecnologias>article {
     text-align: center;
     padding: 10px;
     height: 1250px;
+    background-image: linear-gradient(#3d3d3d , #5e5e5e);
 }
 
 .img-projetos{
     width: 350px;
     height: 300px;
     border-radius: 5px;
-    border: 1px solid var(--cor3);
+    border: 1px solid var(--cor2);
 }
 
 .img-projetos:hover{
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+    box-shadow: 2px 2px 5px var(--cor2);
 }
 
 .android , .social , .login{
+
+    background-color: var(--cor3);
+
     border: 1px solid rgba(0, 0, 0, 0.829);
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
+
     padding: 5px;
     margin: 10px
 }
@@ -185,7 +204,7 @@ section.tecnologias>article {
 .botao{
     width: 100px;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: center;
     font-weight: bold;
 }
