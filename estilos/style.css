@@ -24,6 +24,7 @@ header {
     display: flex;
     align-items: flex-start;
 
+    width: 100vw;
     height: 75px;
 }
 
@@ -80,7 +81,7 @@ menu {
 /* Sessão Sobre */
 
 .sobre {
-    width: 92.5vw;
+    width: 100vw;
     height: 310px;
     padding: 10px;
     text-align: center;
@@ -165,10 +166,12 @@ section.tecnologias>article {
 .img-projetos{
     width: 350px;
     height: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--cor3);
 }
 
 .img-projetos:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
 }
 
 .android , .social , .login{
