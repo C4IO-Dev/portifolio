@@ -226,7 +226,6 @@ section.projetos>h2 {
 }
 
 .botao:hover {
-
     transition-duration: .2s;
     transform: translate(-2px, -2px);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
@@ -235,6 +234,51 @@ section.projetos>h2 {
 /* Sessão Contatos */
 
 .contatos {
-    background-image: linear-gradient(#5e5e5e,#2c2c2c 70%);
+    height: 150px;
+    background-image: linear-gradient(#5e5e5e, #2c2c2c 50%);
     text-align: center;
+}
+
+.img-contatos {
+    float: left;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+}
+
+.link-zap {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+
+    padding-top: 18px;
+}
+
+.whatsapp {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.whatsapp:hover{
+    transition-duration: .2s;
+    transform: translate(-2px, -2px);
+}
+
+.e-mail {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Sessão footer */
+
+footer{
+    text-align: center;
+    color: black;
+}
+
+span{
+    font-weight: 600;
 }
