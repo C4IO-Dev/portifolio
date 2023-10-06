@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 687px) and (max-width: 768px) {
+    header{
+        justify-content: space-between;
+    }
+
+    .lista-menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    menu{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) {
+    header{
+        justify-content: space-between;
+    }
+
+    .lista-menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    menu{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    
+}
