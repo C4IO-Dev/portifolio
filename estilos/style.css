@@ -67,7 +67,7 @@ menu {
 
 .link-lista {
     text-decoration: none;
-    color: rgb(189, 189, 189);
+    color: rgb(202, 202, 202);
 }
 
 .link-lista:hover {
@@ -103,7 +103,7 @@ menu {
 .texto-sobre {
     overflow: hidden;
     line-height: 27px;
-    color: rgb(189, 189, 189);
+    color:rgb(202, 202, 202);
 }
 
 span {
@@ -167,6 +167,8 @@ section.tecnologias>article {
 .paragrafo-tecn {
     margin-top: 8px;
     text-align: center;
+
+    color: rgb(202, 202, 202);
 }
 
 
@@ -180,7 +182,7 @@ section.projetos>h2 {
     text-align: center;
 
     padding: 10px;
-    height: 1260px;
+    height: 1280px;
 
     background-image: linear-gradient(#3d3d3d, #5e5e5e);
 }
@@ -201,6 +203,7 @@ section.projetos>h2 {
 .login {
 
     background-color: var(--cor3);
+    color: rgb(202, 202, 202);
 
     border: 1px solid rgba(0, 0, 0, 0.829);
     border-radius: 10px;
@@ -235,7 +238,9 @@ section.projetos>h2 {
 
 .contatos {
     height: 150px;
+
     background-image: linear-gradient(#5e5e5e, #2c2c2c 50%);
+    
     text-align: center;
 }
 
@@ -249,7 +254,7 @@ section.projetos>h2 {
 
 .link-zap {
     display: inline-block;
-    color: black;
+    color: rgb(202, 202, 202);
     text-decoration: none;
 
     padding-top: 18px;
@@ -270,6 +275,7 @@ section.projetos>h2 {
 .e-mail {
     padding: 10px;
     text-align: center;
+    color: rgb(202, 202, 202);
 }
 
 /* Sessão footer */
