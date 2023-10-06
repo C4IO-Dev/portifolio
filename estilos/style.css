@@ -6,12 +6,16 @@
     padding: 0px;
 }
 
+h2{
+    padding: 10px;
+}
+
 /* Cabeçalho */
 
 header {
     background-color: gray;
     display: flex;
-    
+
     align-items: flex-start;
 
     height: 75px;
@@ -59,14 +63,89 @@ menu {
     color: black;
 }
 
-/* Sessão Sobre */
-
-.sobre{
-    width: 100vw;
-    height: 340px;
+.link-lista:hover {
+    background-color: rgb(165, 164, 164);
+    transform: translate(-3px, -3px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 5px;
 }
 
-.img-sobre{
-    width: 180px;
-    height: 200px;
+/* Sessão Sobre */
+
+.sobre {
+    width: 92.5vw;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-sobre {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    width: 146px;
+    height: 260px;
+    margin-right: 10px;
+}
+
+.texto-sobre {
+    overflow: hidden;
+    line-height: 27px;
+}
+
+span {
+    font-weight: 600;
+}
+
+section.sobre>article {
+    height: 270px;
+}
+
+/* Sessão Tecnologias */
+
+.tecnologias {
+    text-align: center;
+    padding: 10px;
+    height: 480px;
+}
+
+section.tecnologias>article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.js {
+    width: 110px;
+    height: 60px;
+
+    margin: 6px;
+}
+
+.html {
+    width: 70px;
+    height: 70px;
+}
+
+.css {
+    width: 60px;
+    height: 60px;
+
+    margin: 8px;
+}
+
+.git {
+    width: 60px;
+    height: 60px;
+
+    margin: 9px;
+}
+
+.paragrafo-tecn {
+    margin-top: 8px;
+    text-align: center;
 }
