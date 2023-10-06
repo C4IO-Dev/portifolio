@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+:root{
+    --cor1: #072615;
+    --cor2: #8C8C8C;
+    --cor3: #0C4022;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -13,9 +19,9 @@ h2{
 /* Cabeçalho */
 
 header {
-    background-color: gray;
-    display: flex;
+    background-image: linear-gradient(#525252 10%, #072615 );
 
+    display: flex;
     align-items: flex-start;
 
     height: 75px;
@@ -64,7 +70,7 @@ menu {
 }
 
 .link-lista:hover {
-    background-color: rgb(165, 164, 164);
+    background-color: var(--cor2);
     transform: translate(-3px, -3px);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
     transition: transform 0.2s, box-shadow 0.2s;
@@ -75,9 +81,11 @@ menu {
 
 .sobre {
     width: 92.5vw;
-    height: 300px;
+    height: 310px;
     padding: 10px;
     text-align: center;
+
+    background-image: linear-gradient(#072615 , #125c31);
 }
 
 .img-sobre {
@@ -108,21 +116,19 @@ section.sobre>article {
     text-align: center;
     padding: 10px;
     height: 480px;
+
 }
 
 section.tecnologias>article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    display: grid;
+    place-items: center;
     padding: 5px;
+    font-size: 1.1em;
 }
 
 .js {
     width: 110px;
     height: 60px;
-
     margin: 6px;
 }
 
@@ -134,18 +140,49 @@ section.tecnologias>article {
 .css {
     width: 60px;
     height: 60px;
-
     margin: 8px;
 }
 
 .git {
     width: 60px;
     height: 60px;
-
     margin: 9px;
 }
 
 .paragrafo-tecn {
     margin-top: 8px;
     text-align: center;
+}
+
+/* Sessão Projetos */
+
+.projetos{
+    text-align: center;
+    padding: 10px;
+    height: 1250px;
+}
+
+.img-projetos{
+    width: 350px;
+    height: 300px;
+}
+
+.img-projetos:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+
+.android , .social , .login{
+    border: 1px solid rgba(0, 0, 0, 0.829);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
+    padding: 5px;
+    margin: 10px
+}
+
+.botao{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
