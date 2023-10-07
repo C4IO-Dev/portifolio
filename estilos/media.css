@@ -28,6 +28,18 @@
     menu{
         flex-direction: column;
     }
+
+    /* Tecnologias */
+
+    .tecnologias {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+    
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
