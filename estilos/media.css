@@ -46,7 +46,17 @@
 }
 
 @media screen and (min-width:992px) {
+    body{
+        display: flex;
+        flex-direction: column;
+
+        width: 800px;
+        margin: auto;
+    }
+
     header{
         justify-content: center;
     }
+
+
 }
