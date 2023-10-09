@@ -38,10 +38,15 @@
         gap: 10px;
     }
 
-
+    .tecnologias > h2 {
+        grid-column: span 2;
+    }
     
+
 }
 
-@media screen and (min-width:992px) and (max-width:1200px) {
-    
+@media screen and (min-width:992px) {
+    header{
+        justify-content: center;
+    }
 }
