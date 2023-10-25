@@ -1,32 +1,37 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 687px) and (max-width: 768px) {
-    header{
+    header {
         justify-content: space-between;
     }
 
-    .lista-menu{
+    .lista-menu {
         display: flex;
         justify-content: flex-end;
     }
 
-    menu{
+    menu {
         flex-direction: column;
     }
 }
 
 @media screen and (min-width:768px) {
-    header{
+    header {
         justify-content: space-between;
     }
 
-    .lista-menu{
+    .lista-menu {
         display: flex;
         justify-content: flex-end;
     }
 
-    menu{
+    menu {
         flex-direction: column;
+    }
+
+    #paragrafo-3,
+    #paragrafo-4 {
+        display: block;
     }
 
     /* Tecnologias */
@@ -40,15 +45,15 @@
         margin-top: 0px;
     }
 
-    .tecnologias > h2 {
+    .tecnologias>h2 {
         grid-column: span 2;
     }
-    
+
 
 }
 
 @media screen and (min-width:992px) {
-    body{
+    body {
         display: flex;
         flex-direction: column;
 
@@ -56,8 +61,13 @@
         margin: auto;
     }
 
-    header{
+    header {
         justify-content: center;
+    }
+
+    #paragrafo-3,
+    #paragrafo-4 {
+        display: block;
     }
 
 }
