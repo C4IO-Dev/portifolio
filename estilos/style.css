@@ -299,3 +299,33 @@ footer {
 span {
     font-weight: 600;
 }
+
+/* Botão Scroll-to-Top */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: var(--cor3);
+    color: rgb(189, 189, 189);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--cor2);
+    color: black;
+    transition-duration: 0.5s;
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+}
+
+#scrollToTopBtn::after{
+    background-color: var(--cor3);
+}

@@ -113,6 +113,7 @@
     <footer>
         <p class="copy">&copy;Copyright <span>caio_dev</span></p>
     </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Topo</button>
 
     <script>
         // Função para rolar para a seção correspondente
@@ -132,6 +133,25 @@
                 scrollToSection(sectionName);
             });
         });
+
+        // Função para rolar para o topo da página
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Função para mostrar ou ocultar o botão Scroll-to-Top
+        window.onscroll = function () {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        };
+
     </script>
 
 </body>
